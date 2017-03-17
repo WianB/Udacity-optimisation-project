@@ -22,7 +22,7 @@ for (var i = 2; i < 100; i++) {
 }
 ```
 
-### to:
+#### to:
 
 ```
 var pizzasDiv = document.getElementById("randomPizzas");
