@@ -145,10 +145,13 @@ var adjectives = ["dark", "color", "whimsical", "shiny", "noisy", "apocalyptic",
         function b(a) {
             switch (a) {
                 case "1":
+                    //Changed to .getElementById as this is faster
                     return void(document.getElementById("pizzaSize").innerHTML ="Small");
                 case "2":
+                    //Changed to .getElementById as this is faster
                     return void(document.getElementById("pizzaSize").innerHTML ="Medium");
                 case "3":
+                    //Changed to .getElementById as this is faster
                     return void(document.getElementById("pizzaSize").innerHTML ="Large");
                 default:
                     console.log("bug in changeSliderLabel")
@@ -169,6 +172,7 @@ var adjectives = ["dark", "color", "whimsical", "shiny", "noisy", "apocalyptic",
                 }
             }
             var d = a.offsetWidth,
+            //Changed to .getElementById as this is faster
                 e =  document.getElementById("randomPizzas").offsetWidth,
                 f = d / e,
                 g = c(b),
@@ -177,6 +181,7 @@ var adjectives = ["dark", "color", "whimsical", "shiny", "noisy", "apocalyptic",
         }
 
         function d(a) {
+            //Changed to .getElementsByClassName as this is faster.
             for (var b = c(document.getElementsByClassName("randomPizzaContainer")[0], a), d = document.getElementsByClassName("randomPizzaContainer")[0].offsetWidth + b + "px", e = 0; e < document.getElementsByClassName("randomPizzaContainer").length; e++) document.getElementsByClassName("randomPizzaContainer")[e].style.width = d
         }
         window.performance.mark("mark_start_resize"), b(a), d(a), window.performance.mark("mark_end_resize"), window.performance.measure("measure_pizza_resize", "mark_start_resize", "mark_end_resize");
