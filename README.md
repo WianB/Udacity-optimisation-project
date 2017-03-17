@@ -13,7 +13,7 @@ In this project I optimized a website given to me by Udacity. A horrible pizza w
 
 4. Fixed rendering bottlenecks in most cases elements accessed the DOM multiple times when not needed(see Example).
 
-#### Example
+### Example
 
 ```
 for (var i = 2; i < 100; i++) {
@@ -22,7 +22,7 @@ for (var i = 2; i < 100; i++) {
 }
 ```
 
-to:
+### to:
 
 ```
 var pizzasDiv = document.getElementById("randomPizzas");
@@ -38,7 +38,7 @@ for (var i = 2; i < 100; i++) {
 document.querySelector("#pizzaSize").innerHTML = "Small");
 ```
 
-to:
+#### to:
 
 ```
 document.getElementById("pizzaSize").innerHTML = "Small");
