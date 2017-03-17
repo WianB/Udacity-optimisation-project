@@ -198,11 +198,9 @@ var timeToGenerate = window.performance.getEntriesByName("measure_pizza_generati
 console.log("Time to generate pizzas on load: " + timeToGenerate[0].duration + "ms");
 var frame = 0;
 window.addEventListener("scroll", updatePositions), document.addEventListener("DOMContentLoaded", function() {
-
     //Changed variable names as well as taking them out of the for loop
     var size = 256;
     var columns = 8;
-
     var rows = Math.round( window.screen.height / size );
     //Calculate how much pizzas will be made based on the height of the window.
     var pizzaCount = rows * columns;
